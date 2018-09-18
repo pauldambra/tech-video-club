@@ -158,3 +158,224 @@
   image_url: https://pbs.twimg.com/media/DV_qkn0XkAA7ZCZ.jpg
   note:
   date: 2018-02-14
+
+- presenter: Rich Hickey
+  title:  Simple Made Easy
+  video_url: https://www.infoq.com/presentations/Simple-Made-Easy
+  image_url:
+  note:
+  date: 2018-02-21
+
+- presenter: Chris O'Dell
+  title:  You build it, you run it (why developers should also be on call)
+  video_url: https://vimeo.com/254635708
+  image_url:
+  note:
+  date: 2018-02-28
+
+- presenter: Kevin Rutherford & James Jeffries
+  title:  Red, Green, Now What
+  video_url: https://www.youtube.com/watch?v=fSr8LDcb0Y0
+  image_url:
+  note:
+  date: 2018-03-07
+
+- presenter: Ian Cooper
+  title:  TDD Where did it all go wrong
+  video_url: https://vimeo.com/68375232
+  image_url:
+  note:
+  date: 2018-03-14
+
+- presenter: Nicole Johnson
+  title:  Automating Security & Compliance (for Fun & Profit)
+  video_url: https://www.youtube.com/watch?v=6bZgM6IrMoQ
+  image_url:
+  note:
+  date: 2018-03-21
+
+- presenter: Mikaela Patella
+  title:  Web Development is Distributed Systems Programming
+  video_url: https://www.youtube.com/watch?v=KxMK2AklpNY
+  image_url:
+  note:
+  date: 2018-03-21
+
+- presenter: Thierry de Pauw
+  title:  Feature Branches are Evil
+  video_url: https://www.youtube.com/watch?v=h4DM-Wa0aDQ&feature=youtu.be
+  image_url:
+  note:
+  date: 2018-03-28
+
+- presenter: Jessica Kerr
+  title: Forget Velocity, Let's Talk Acceleration
+  video_url: https://www.youtube.com/watch?v=Lbcyyu8XB_Y&t=82
+  image_url:
+  note:
+  date: 2018-04-04
+
+- presenter: Greg Wilson
+  title: What We Actually Know About Software Development, and Why We Believe It’s True
+  video_url: https://vimeo.com/9270320
+  image_url:
+  note:
+  date: 2018-04-11
+
+- presenter: Trisha Gee
+  title: Real World Java 9
+  video_url: https://www.youtube.com/watch?v=watS54iWH9U
+  image_url:
+  note:
+  date: 2018-04-18
+
+- presenter: Emer Coleman
+  title:  ethics - THE END OF THE TECHNOLOGY AFFAIR (IT'S NOT ME IT'S YOU)
+  video_url: https://www.wearesigma.com/campdigital/archive/2017/emer-coleman/
+  image_url:
+  note:
+  date: 2018-04-25
+
+- presenter: Elisabeth Hendrickson
+  title: Care and Feeding of Feedback Cycles
+  video_url: https://www.youtube.com/watch?v=F0BRsnYwnBk&feature=youtu.be
+  image_url:
+  note:
+  date: 2018-05-02
+
+- presenter: Ben Stopford
+  title: Rethinking Microservices with Stateful Streams
+  video_url: https://www.youtube.com/watch?v=6lONG_F76To
+  image_url:
+  note:
+  date: 2018-05-09
+
+- presenter: David Nolen
+  title: Idée Fixe
+  video_url: https://youtu.be/lzXHMy4ewtM
+  image_url:
+  note:
+  date: 2018-05-23
+
+- presenter: Anna Shipman
+  title: How Coding In The Open can help you release faster
+  video_url: https://www.youtube.com/watch?v=M94Hg1mMGAg
+  image_url:
+  note:
+  date: 2018-06-06
+
+- presenter: Sabrina Leandro
+  title: How to rewrite, a bit at a time
+  video_url: https://www.youtube.com/watch?v=cl7fWmeM9Cw
+  image_url:
+  note:
+  date: 2018-06-06
+
+- presenter: Kelsey Hightower
+  title: Kubernetes for SysAdmins
+  video_url: https://www.youtube.com/watch?v=HlAXp0-M6SY
+  image_url:
+  note:
+  date: 2018-06-13
+
+- presenter: Kevlin Henney
+  title: Code as Risk
+  video_url: https://www.youtube.com/watch?v=YyhfK-aBo-Y
+  image_url:
+  note:
+  date: 2018-06-20
+
+- presenter: Jessica Kerr
+  title: Property Based Testing
+  video_url: https://www.infoq.com/presentations/property-based-testing
+  image_url:
+  note:
+  date: 2018-07-04
+
+- presenter: Udi Dahan
+  title: Business Logic – a different perspective
+  video_url: https://skillsmatter.com/skillscasts/6433-business-logic-a-different-perspective
+  image_url:
+  note:
+  date: 2018-07-11
+
+- presenter: Alice Goldfuss
+  title: The Container Operator’s Manual
+  video_url: https://www.youtube.com/watch?v=sJx_emIiABk
+  image_url:
+  note:
+  date: 2018-07-18
+
+- presenter: Rich Hickey
+  title: Hammock-driven development
+  video_url: https://youtu.be/f84n5oFoZBc
+  image_url:
+  note:
+  date: 2018-07-25
+
+- presenter: Sam Newman
+  title: Feature toggles in a post-github world
+  video_url: https://www.youtube.com/watch?v=lqRQYEHAtpk
+  image_url:
+  note:
+  date: 2018-08-01
+
+- presenter: Jon Skeet
+  title: Everything I know about API design, I learned from the Spice Girls
+  video_url: https://www.youtube.com/watch?v=9KOMMpn-r2M
+  image_url:
+  note:
+  date: 2018-08-08
+
+- presenter: Kelsey Hightower
+  title: 12-Factor Apps and the HashiStack
+  video_url: https://www.youtube.com/watch?v=NVl9cIiPF80
+  image_url:
+  note:
+  date: 2018-08-08
+
+- presenter: Pratik Patel
+  title: Serverless in the Java Ecosystem
+  video_url: https://www.youtube.com/watch?v=AigTHVexcZA
+  image_url: https://pbs.twimg.com/media/DkowIlpX0AAJm7c.jpg
+  note:
+  date: 2018-08-15
+
+- presenter: Martin Kleppmann
+  title: Turning a database inside out
+  video_url: https://www.youtube.com/watch?v=fU9hR3kiOK0&feature=youtu.be
+  image_url: https://pbs.twimg.com/media/DlMyinaXoAIGpSY.jpg
+  note:
+  date: 2018-08-22
+
+- presenter: Catherine Swetel
+  title: The Development Metrics You Should Use (but Don’t)
+  video_url: https://www.youtube.com/watch?v=cW3yM-K2M08
+  image_url: https://pbs.twimg.com/media/DlwtTdRWsAMC-va.jpg
+  note:
+  date: 2018-08-29
+
+- presenter: Steve Smith
+  title: Measuring Continuous Delivery
+  video_url: https://www.youtube.com/watch?v=TZY49ZgOF0w
+  image_url: https://pbs.twimg.com/media/DmU4eQvW4AEnaoo.jpg
+  note:
+  date: 2018-09-05
+
+- presenter: Emily Schechter
+  title: The trouble with URLs
+  video_url: https://www.youtube.com/watch?v=UD-ukjVoeLc&feature=youtu.be
+  image_url: https://pbs.twimg.com/media/Dm48tuUW0AEPl9y.jpg
+  note:
+  date: 2018-09-12
+
+
+
+
+
+
+
+
+
+
+
