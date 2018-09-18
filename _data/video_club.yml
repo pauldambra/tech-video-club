@@ -1,0 +1,160 @@
+- presenter: Sandi Metz
+  title: Nothing is Something
+  video_url: https://www.youtube.com/watch?v=9lv2lBq6x4A
+  image_url: https://pbs.twimg.com/media/DIeRd4zUIAAz9Z0.jpg
+  note:
+  date: 2017-08-30
+
+- presenter: Dan North
+  title: EventStorming for fun and profit
+  video_url: https://skillsmatter.com/skillscasts/8003-event-storming-for-fun-and-profit
+  image_url: https://pbs.twimg.com/media/DJCVmgoWsAAQtlK.jpg
+  note:
+  date: 2017-09-06
+
+- presenter: Steve Smith
+  title: The death of continuous integration
+  video_url: https://www.infoq.com/presentations/death-continuous-integration
+  image_url: https://pbs.twimg.com/media/DJmY_xGXkAEPdmp.jpg
+  note:
+  date: 2017-09-13
+
+- presenter: Emily Webber
+  title: Communities of Practice, the Missing Piece of Your Agile Organisation
+  video_url: https://www.youtube.com/watch?v=9Owrovki73o
+  image_url: https://pbs.twimg.com/media/DKKbd8UXUAA4hoZ.jpg
+  note:
+  date: 2017-09-20
+
+- presenter: Adam Tornhill
+  title: Your code as a crime scene
+  video_url: https://www.youtube.com/watch?v=7FApEq8wum4
+  image_url: https://pbs.twimg.com/media/DKueRxhXoAEvYa_.jpg
+  note:
+  date: 2017-09-27
+
+- presenter: Jez Humble
+  title: Continuous Delivery In Agile
+  video_url: https://vimeo.com/229954108
+  image_url: https://pbs.twimg.com/media/DLShnFJXoAE8h6c.jpg
+  note:
+  date: 2017-10-04
+
+- presenter: Dan North
+  title: Patterns of Effective Teams
+  video_url: https://www.youtube.com/watch?v=lvs7VEsQzKY
+  image_url: https://pbs.twimg.com/media/DL2m0HrXkAAhpvW.jpg
+  note:
+  date: 2017-10-11
+
+- presenter: Arif Wider and Christian Deger
+  title: Data Science delivered continuously
+  video_url: https://www.thoughtworks.com/talks/data-science-delivered-continuously-xconf-eu-2017
+  image_url: https://pbs.twimg.com/media/DManpvfW4AAMUwU.jpg
+  note:
+  date: 2017-10-11
+
+- presenter: Sarah Mei
+  title: Liveable Code
+  video_url: https://brightonruby.com/2017/livable-code-sarah-mei/
+  image_url: https://pbs.twimg.com/media/DM_uo4vWkActFhw.jpg
+  note:
+  date: 2017-10-25
+
+- presenter: Ken Mugrage
+  title: It's not Continuous Delivery if you can't deploy right now
+  video_url: https://www.youtube.com/watch?v=po712VIZZ7M
+  image_url: https://pbs.twimg.com/media/DNi9XpXX0AAcQey.jpg
+  note:
+  date: 2017-11-01
+
+- presenter: Sallyann Freudenberg
+  title: The Tech Industry needs all Kinds of Minds - How to Support Them?
+  video_url: https://www.youtube.com/watch?v=dvRJmzEoJno
+  image_url: https://pbs.twimg.com/media/DOHBOrGWsAEcMR6.jpg
+  note:
+  date: 2017-11-08
+
+- presenter: Jim Weirich
+  title: Y Not- Adventures in Functional Programming
+  video_url: https://www.youtube.com/watch?v=FITJMJjASUs
+  image_url: https://pbs.twimg.com/media/DOrEC1qXcAErlyh.jpg
+  note:
+  date: 2017-11-15
+
+- presenter: Jessica Kerr
+  title: Adventures in Elm
+  video_url: https://www.youtube.com/watch?v=cgXhMc8M4X4
+  image_url: https://pbs.twimg.com/media/DPzJaIHW4AU2pqF.jpg
+  note:
+  date: 2017-11-22
+
+- presenter: Gary Bernhardt
+  title: Several Destory All Software Screencasts
+  video_url: https://www.destroyallsoftware.com/screencasts/catalog
+  image_url: https://pbs.twimg.com/media/DQXO-gPXUAEhjmN.jpg
+  note: Gary kindly allowed us to share a few videos from my subscription &#128150;
+  date: 2017-12-06
+
+- presenter: Steve Freeman
+  title: Given When Then considered harmful
+  video_url: https://skillsmatter.com/skillscasts/5009-given-when-then-considered-harmful
+  image_url: https://pbs.twimg.com/media/DQ7VbuiWkAEGuzm.jpg
+  note:
+  date: 2017-12-13
+
+- presenter: Hadi Hariri
+  title: intellij tips and tricks
+  video_url: https://www.youtube.com/watch?v=P2MoObVeMX4
+  image_url:
+  note:
+  date: 2017-12-20
+
+- presenter: Matthew Skelton
+  title: Devops Topologies
+  video_url: https://www.youtube.com/watch?v=K-CXYyMGR6Y&app=desktop
+  image_url: https://pbs.twimg.com/media/DSnY3VSW0AAomCF.jpg
+  note:
+  date: 2018-01-03
+
+- presenter: Charity Majors
+  title: Observability for emerging infra
+  video_url: https://www.youtube.com/watch?v=1wjovFSCGhE&app=desktop
+  image_url: https://pbs.twimg.com/media/DTveFEvXkAA9PpD.jpg
+  note:
+  date: 2018-01-17
+
+- presenter: Gary Bernhardt
+  title: Boundaries
+  video_url: https://www.destroyallsoftware.com/talks/boundaries
+  image_url: https://pbs.twimg.com/media/DUTiECMW0AEOcCa.jpg
+  note:
+  date: 2018-01-24
+
+- presenter: Rachel Davies
+  title: XP in the 21st Century
+  video_url: https://www.youtube.com/watch?v=IDKJJDiK3Gw
+  image_url: https://pbs.twimg.com/media/DU3lAXLWsAA8zkz.jpg
+  note:
+  date: 2018-01-31
+
+- presenter: J. B. Rainsberger
+  title: 7 mins and 26 seconds
+  video_url: https://vimeo.com/79106557
+  image_url: https://pbs.twimg.com/media/DU3trFoXkAAMHr6.jpg
+  note:
+  date: 2018-01-31
+
+- presenter: Gwen Shapira
+  title: Stream All Things - Patterns of Modern Data Integration
+  video_url: https://www.youtube.com/watch?v=Hjae0Cw9oew
+  image_url: https://pbs.twimg.com/media/DVbpfyjWAAAeWKT.jpg
+  note:
+  date: 2018-02-07
+
+- presenter: Dan North
+  title: How to Break the Rules
+  video_url: https://www.youtube.com/watch?v=hZFShSjAhlQ
+  image_url: https://pbs.twimg.com/media/DV_qkn0XkAA7ZCZ.jpg
+  note:
+  date: 2018-02-14
