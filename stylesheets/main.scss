@@ -1,2 +1,60 @@
 ---
 ---
+
+header {
+  display: flex;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  h1 {
+    flex-grow: 4;
+    margin-top: 0;
+  }
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.flex-column {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.video-tile {
+  &:nth-child(odd) {
+      background-color: #ada6a645;
+  }
+
+  padding: 1em;
+  margin-bottom: 0.5em;
+
+  h1 {
+    margin: 0 0 0.25em 0;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .video-image {
+    text-align: center;
+    padding: 0.5em;
+    img {
+      width: auto;
+      max-width: 100%;
+    }
+  }
+}
