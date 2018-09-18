@@ -2,3 +2,14 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta name="twitter:card" content="summary_large_image"></meta>
+<meta name="twitter:site" content="@pauldambra" />
+<meta name="twitter:creator" content="@pauldambra" />
+<meta property="og:url" content="{{site.github.repository_url}}/{{page.path}}" />
+
+{% assign last_video = site.data.video_club | sort:"date" | reverse | first %}
+
+<meta property="og:title" content="{{last_video.title}}" />
+<meta property="og:description" content="Watch the last #videoclub video we watched at {{last_video.video_url}}." />
+<meta property="og:image" content="{{last_video.image_url}}" />
