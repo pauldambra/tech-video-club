@@ -3,11 +3,11 @@
 <div class="margin-bh row video-tile">
   <div class="column">
 
-    <h1>
+    <h2>
       <a href="{{ video.video_url }}">
         {{ video.title }} by {{video.presenter}}
       </a>
-    </h1>
+    </h2>
 
     watched on {{ video.date | date: "%Y&#8209;%m&#8209;%d" }} at: <a href="{{ video.video_url }}">{{ video.video_url }}</a>
 
@@ -19,7 +19,7 @@
       <div class="video-image row margin-tq">
         <div class="column all-7">
           <a href="{{ video.video_url }}">
-            <img src="{{ video.image_url }}" />
+            <img src="{{ video.image_url }}" alt="the image from the tweet advertising this video"/>
           </a>
         </div>
       </div>
