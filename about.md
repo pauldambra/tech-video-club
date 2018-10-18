@@ -25,7 +25,7 @@ We use a Trello board to propose and curate the list of videos. Each of the card
 
 We're lucky to have several colleagues that do watch tech videos and can suggest them. The videos we've watched are shared on this site so you can take advantage of our curation.
 
-In our experience overly technical topics can be a bit heavy over lunch (I'm looking at you lambda calculus) but it's important to choose videos appropriate for the audience.
+In our experience overly technical topics can be a bit heavy over lunch (I'm looking at you [lambda calculus](https://www.youtube.com/watch?v=FITJMJjASUs)) but it's important to choose videos appropriate for the audience.
 
 # organising the thing
 
