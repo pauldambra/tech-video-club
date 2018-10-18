@@ -37,10 +37,10 @@ The organiser should try to avoid videos that last a full hour so people are abl
 
 The organiser is responsible for arriving on time, getting set up so we can watch the video, and checking the audio/video quality of the video ahead of time.
 
-When the video is finished the organiser can kickstart discussion if it doesn't start naturally with a question like:
+When the video is finished the organiser can kickstart discussion, if it doesn't start naturally, with a question like:
 
  * so what do we think?
  * how do we do at blah?
  * who already does blah? -> how does that work?
 
-## We've watched a video almost every week for a little more than a year and it has been a great way to get to know each other and to learn together
+### We've watched a video almost every week for a little more than a year and it has been a great way to get to know each other and to learn together
