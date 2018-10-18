@@ -12,7 +12,5 @@ layout: default
   </p>
 </div>
 
-<div class="video-club flex-column">
   {% assign sorted_videos = site.data.video_club | sort:"date" | reverse | slice: 0, 5 %}
   {% include video-list.html %}
-</div>

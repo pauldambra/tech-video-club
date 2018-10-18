@@ -1,0 +1,39 @@
+/*===============================================
+Breadcrumbs - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../variables";
+@import "../functions";
+@import "../mixins/helpers";
+@import "../mixins/icons";
+
+.breadcrumbs {
+  padding: $quarter-spacing-unit / 2 0;
+  margin-bottom: $half-spacing-unit;
+
+  @include media(medium) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  li {
+    display: inline;
+    list-style: none;
+
+    &:after {
+      @extend %icon;
+      @extend %icon-forward-arrow;
+      color: $coop-border-grey;
+      position: relative;
+      top: -1px;
+      padding: 5px 14px;
+    }
+
+    &:last-child {
+
+      &:after {
+        content: none;
+      }
+    }
+  }
+}

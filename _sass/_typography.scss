@@ -1,0 +1,136 @@
+/*===============================================
+Typography - Co-op Front-end Toolkit
+===============================================*/
+
+@import "variables";
+@import "mixins/typography";
+
+h1, .h1, .alpha,
+h2, .h2, .beta,
+h3, .h3, .gamma,
+h4, .h4, .delta,
+h5, .h5, .epsilon,
+h6, .h6, .zeta,
+ul,
+ol,
+p,
+address {
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h1, .h1, .alpha,
+h2, .h2, .beta,
+h3, .h3, .gamma,
+h4, .h4, .delta,
+h5, .h5, .epsilon,
+h6, .h6, .zeta {
+  font-family: $bold;
+}
+
+p {
+  @include body;
+  @include spacing('margin', 'bottom', 'quarter');
+}
+
+ul,
+ol {
+  @include body;
+  @include spacing('margin', 'bottom', 'quarter');
+}
+
+p:last-child {
+  @include spacing('margin', 'bottom', 'half');
+}
+
+.h-mega {
+  @include heading-mega;
+}
+
+h1, .h1, .alpha {
+  @include heading-h1;
+}
+
+h2, .h2, .beta {
+  @include heading-h2;
+}
+
+h3, .h3, .gamma {
+  @include heading-h3;
+}
+
+h4, .h4, .delta {
+  @include heading-h4;
+}
+
+h5, .h5, .epsilon {
+  @include heading-h5;
+}
+
+h6, .h6, .zeta {
+  @include heading-h6;
+}
+
+small,
+.smallprint {
+  @include small;
+}
+
+hr {
+  display: block;
+  margin: 2em 0 3em;
+  border: 1px solid $coop-border-grey;
+  border-width: 0 0 1px;
+  height: 0;
+  color: $coop-grey;
+
+  &.dashed {
+    border-style: dashed;
+    border-color: $coop-grey;
+  }
+}
+
+.regular {
+  @include regular;
+}
+
+.italic,
+.em,
+em {
+  @include regular-italic;
+}
+
+.bold,
+.strong,
+strong {
+  @include bold;
+}
+
+.medium {
+  @include medium;
+}
+
+.bold-italic {
+  @include bold-italic;
+}
+
+blockquote {
+  @include blockquote;
+}
+
+cite {
+  @include cite;
+}
+
+del,
+.line-through {
+  @include line-through;
+}
+
+address {
+  @include regular;
+}
+
+.intro-text {
+  @include intro-text;
+}

@@ -1,0 +1,77 @@
+/*===============================================
+Global - Co-op Front-end Toolkit
+===============================================*/
+
+@import "variables";
+@import "functions";
+@import "mixins/typography";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;  
+}
+
+html,
+body {
+  font-size: em-calc(map-deep-get($typographic-scale, "base", "body"));
+}
+
+body {
+  @include line-height();
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: $body-copy;
+  font-family: $regular;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include ie(8) {
+    min-width: 960px;
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    nav,
+    section {
+      display: block;
+    }
+
+    audio,
+    canvas,
+    video {
+       display: inline-block;
+      *display: inline;
+      *zoom: 1;
+    }
+
+    audio:not([controls]) {
+      display: none;
+    }
+
+    [hidden] {
+      display: none;
+    }
+  }
+}
+
+
+// Responsive images
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+
+// Main content
+.main {
+  margin-top: $half-spacing-unit;
+}

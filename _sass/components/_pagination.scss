@@ -1,0 +1,41 @@
+/*===============================================
+Pagination - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../variables";
+@import "../mixins/helpers";
+
+.pagination {
+  @include clearfix;
+
+  padding-left: 0;
+  margin-bottom: $half-spacing-unit;
+  margin-left: 0;
+
+  li {
+    list-style: none;
+    float: left;
+    display: inline-block;
+    margin: 0 $base-spacing-unit /4 0 0;
+
+    a {
+      display: block;
+      padding: $quarter-spacing-unit/2 $half-spacing-unit/2;
+      border: 1px solid $coop-grey;
+      border-radius: $border-radius;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $offwhite;
+        color: $coop-blue;
+      }
+
+      .icon {
+        font-size: 0.75em;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,367 @@
+/*===============================================
+Forms mixins - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../functions";
+@import "helpers";
+
+%form-row {
+  @include clearfix;
+  margin-bottom: $quarter-spacing-unit;
+}
+
+%form-label {
+  font-family: $medium;
+  display: block;
+  margin: 0 0 $quarter-spacing-unit / 2;
+  font-size: em-calc(24);
+}
+
+@mixin form-field($include-presuffix: true) {
+  display: block;
+  width: 100%;
+  padding: ($quarter-spacing-unit * .75) ($quarter-spacing-unit / 2);
+  background: $white;
+  border: 1px solid;
+  border-color: $coop-grey;
+  color: $body-copy;
+  outline: 0;
+  transition: all 0.3s ease-in-out;
+  font-size: em-calc(20);
+
+  &.input-strong {
+    border: 2px solid;
+    border-color: $coop-grey;
+  }
+
+  &:focus {
+    background: $white;
+    border-color: $coop-blue;
+  }
+
+  &:hover::-webkit-input-placeholder {
+    color: $coop-grey;
+  }
+
+  &:focus::-webkit-input-placeholder {
+    transition: opacity 0.5s 0.5s ease;
+    opacity: 0;
+  }
+
+  @if $include-presuffix == true {
+    &.input-prefix,
+    &.input-suffix {
+      display: inline-block;
+      float: left;
+      width: auto;
+    }
+
+    &.input-prefix {
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &.input-suffix {
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+  }
+
+  &.input-inline {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+@mixin form-select {
+  @include form-field($include-presuffix: false);
+  -webkit-appearance: menulist !important;
+  -moz-appearance: menulist !important;
+  height: 2.8175em;
+  cursor: pointer;
+}
+
+@mixin form-check-field($type) {
+  position: absolute;
+  left: -9999px;
+  width: 0;
+  height: 0;
+
+  @include ie(8) {
+    position: static;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    display: inline;
+    border: none;
+    vertical-align: middle;
+  }
+
+  & + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    line-height: 1.75;
+
+    &:before {
+      content: " ";
+      display: inline-block;
+      margin-right: .5em;
+      border: 1px solid $coop-grey;
+      vertical-align: top;
+      text-align: center;
+      font-size: 1.25em;
+      line-height: 1.25;
+
+      @if $type == "radio" {
+        width: 1.25em;
+        height: 1.25em;
+        border-radius: 50%;
+      }
+
+      @if $type == "checkbox" {
+        width: 1.375em;
+        height: 1.375em;
+      }
+
+      @include ie(8) {
+        content: none;
+      }
+    }
+
+    &:hover {
+      &:before {
+        background-color: $offwhite;
+      }
+    }
+  }
+
+  &:checked {
+    & + label {
+      color: $coop-blue;
+
+      @if $type == "radio" {
+        &:before {
+          border-color: $coop-blue;
+        }
+        &:after {
+          content: " ";
+          position: absolute;
+          top: .3125em;
+          left: .3125em;
+          display: block;
+          width: .9375em;
+          height:.9375em;
+          background: $coop-blue;
+          border-radius: 50%;
+        }
+      }
+
+      @if $type == "checkbox" {
+        &:before {
+          content: "\e60c";
+          font-family: "coopicons";
+          font-weight: bold;
+          border-color: $coop-blue;
+        }
+      }
+    }
+  }
+}
+
+@mixin form-tap-tile {
+  position: absolute;
+  left: -9999px;
+
+  & + label {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    padding: 1em 1.5em;
+    margin: 0 1em 1em 0;
+    border: 1px solid $coop-grey;
+    color: $body-copy;
+    background-color: $white;
+    transition: all 0.1s linear;
+
+    &:before,
+    &:after {
+      content: none;
+    }
+
+    &:hover {
+      border-color: $coop-blue;
+      background-color: $offwhite;
+    }
+  }
+
+  &:checked + label {
+    background-color: $coop-blue;
+    color: $white;
+    border-color: $coop-blue;
+  }
+
+  &.input-strong + label {
+    border: 2px solid;
+    border-color: $coop-grey;
+  }
+
+  &.input-strong:checked  + label {
+    border-color: $coop-blue;
+  }
+
+  @include ie(8) {
+    position: relative;
+    left: 0;
+
+    & + label {
+      min-width: 0;
+      margin-right: 15px;
+      padding: 0 !important;
+      border: 0;
+    }
+  }
+}
+
+@mixin tap-check {
+  padding: calc(#{$quarter-spacing-unit} + .1em) calc(#{$half-spacing-unit} + 1.4em);
+  background: $offwhite;
+  border-radius: 5px;
+  font-size: em-calc(20);
+  font-weight: $regular;
+  border: 2px solid transparent;
+  cursor: pointer;
+  margin-bottom: $quarter-spacing-unit;
+  width: 100%;
+  min-width: 25%;
+  position: relative;
+  transition: border-color 0.1s linear;
+
+  @include media(medium) {
+    width: auto;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    border: 2px solid $coop-grey;
+  }
+
+  &.checked {
+    border: 2px solid $coop-brand-blue;
+    background: $white;
+
+    input[type=radio], input[type=checkbox] {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  input[type=radio],
+  input[type=checkbox] {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: calc(#{$base-spacing-unit/3} + 6px);
+    left: $base-spacing-unit/3;
+
+    &:focus {
+      box-shadow: 0px 0px 10px $coop-brand-blue;
+    }
+  }
+}
+
+@mixin indented {
+  border-left: 3px solid $coop-brand-blue;
+  padding: $quarter-spacing-unit 0 $quarter-spacing-unit $half-spacing-unit;
+  margin: 0 0 $half-spacing-unit $half-spacing-unit/1.1;
+  width: calc(100% - #{$base-spacing-unit} - 3px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  @include media(medium) {
+    label {
+      font-size: 1.1rem;
+    }
+  }
+
+  fieldset {
+    margin-bottom: $three-quarter-spacing-unit;
+  }
+}
+
+@mixin form-presuffix {
+  display: block;
+  float: left;
+  padding: ($quarter-spacing-unit * .75) $quarter-spacing-unit;
+  border: 1px solid $coop-grey;
+  background: $offwhite;
+  font-size: em-calc(20);
+  text-align: center;
+  line-height: normal;
+
+  &.input-strong {
+    border: 2px solid $coop-grey;
+  }
+}
+
+@mixin form-prefix {
+  @include form-presuffix;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  &.input-strong {
+    border-right: 0;
+  }
+}
+
+@mixin form-suffix {
+  @include form-presuffix;
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  &.input-strong {
+    border-left: 0;
+  }
+}
+
+%form-invalid {
+  border-color: $saleerror-red !important;
+}
+
+%form-error {
+  position: relative;
+  margin: .5em 0;
+  padding-left: 2em;
+  color: $saleerror-red;
+
+  &:before {
+    @extend %icon;
+    @extend %icon-alert;
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+  }
+
+  &:last-child {
+    margin-bottom: .5em;
+  }
+}

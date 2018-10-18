@@ -1,0 +1,148 @@
+/*===============================================
+Forms - Co-op Front-end Toolkit
+===============================================*/
+
+@import "variables";
+@import "functions";
+@import "mixins/forms";
+@import "mixins/icons";
+
+.form-row {
+  @extend %form-row;
+}
+
+.form-section {
+  margin-bottom: $half-spacing-unit;
+}
+
+label,
+legend {
+  @extend %form-label;
+}
+
+.label__hint {
+  display: block;
+  color: $coop-grey;
+  font-size: em-calc(12px);
+  font-family: $regular;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+input,
+textarea  {
+  @include form-field;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select {
+  @include form-select;
+}
+
+.block-label {
+  @include tap-check;
+}
+
+.tap-input {
+  @include form-tap-tile;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+
+  &::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: $light-grey;
+    border: 0;
+    border-radius: 3px;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: $coop-blue;
+    margin-top: -4px;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 20px lighten($coop-blue, 20%);
+    }
+  }
+
+  &:focus {
+    outline: 0;
+
+    &::-webkit-slider-runnable-track {
+      background: $dark-grey;
+    }
+  }
+}
+
+.indented {
+  @include indented;
+}
+
+span.prefix {
+  @include form-prefix;
+}
+
+span.suffix {
+  @include form-suffix;
+}
+
+
+// Error states
+.invalid {
+  @extend %form-invalid;
+}
+
+.form-error {
+  @extend %form-error;
+}
+
+.form-wrap-header {
+  @include media(medium) {
+    padding: $quarter-spacing-unit $half-spacing-unit;
+    background: $coop-blue;
+    color: $white;
+  }
+}
+
+.form-wrap-title {
+  margin: 0;
+  color: $coop-blue;
+
+  @include media(medium) {
+    color: $white;
+  }
+}
+
+.form-wrap {
+  padding: $half-spacing-unit 0;
+  margin-bottom: $half-spacing-unit;
+
+  @include media(medium) {
+    padding: $half-spacing-unit;
+    border: 1px solid $coop-border-grey;
+  }
+}
+
+.form-navigation {
+  @include clearfix;
+
+  margin-top: $half-spacing-unit;
+  padding-top: $half-spacing-unit;
+  border-top: 1px solid $coop-border-grey;
+}

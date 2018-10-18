@@ -1,0 +1,18 @@
+/*===============================================
+Navigation in page - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../variables";
+@import "../mixins/typography";
+
+.in-page-nav {
+  @include spacing('padding', 'left', 'half');
+  @include spacing('margin', 'bottom', 'base');
+  border-left: 10px solid $mid-grey;
+  margin-left: 2px;
+
+  li,
+  .in-page-nav_item {
+    margin-bottom: 12px;
+  }
+}

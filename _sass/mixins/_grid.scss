@@ -1,0 +1,120 @@
+/*===============================================
+Grid layout mixins - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../functions";
+@import "helpers";
+
+%wrap {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $grid-gutter/2;
+  padding-right: $grid-gutter/2;
+  max-width: map-get-default($breakpoints, "xlarge", 1300px);
+
+  // @include media(medium) {
+  //   padding-left: $grid-gutter *.8;
+  //   padding-right: $grid-gutter *.8;
+  // }
+
+  @include media(large) {
+    padding-left: $grid-gutter;
+    padding-right: $grid-gutter;
+  }
+}
+
+@mixin row($collapse-class: '') {
+  @include clearfix;
+
+  margin-left: -$grid-gutter /4;
+  margin-right: -$grid-gutter /4;
+
+  @include media(medium) {
+    margin-left: -$grid-gutter /2;
+    margin-right: -$grid-gutter /2;
+  }
+
+  // @if $collapse-class != '' {
+  //   &.#{$collapse-class} {
+  //     margin-left: 0;
+  //     margin-right: 0;
+  //   }
+  // }
+}
+
+@mixin column($collapse-class: '') {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-left: $grid-gutter /4;
+  padding-right: $grid-gutter /4;
+
+  @include media(medium) {
+    padding-left: $grid-gutter /2;
+    padding-right: $grid-gutter /2;
+  }
+
+  @if $collapse-class != '' {
+    .#{$collapse-class} > &,
+    &.#{$collapse-class} {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+/**
+ * Creates the classes necessary for all columns to exist for the specified
+ * screen size. This relies on the following global variables being set:
+ * - $grid-total-columns
+ * - $grid-include-offset-classes
+ * - $grid-include-push-classes
+ * - $grid-include-pull-classes
+ * - $grid-include-center-classes
+ */
+@mixin grid-columns($size) {
+  @for $i from 1 through $grid-total-columns {
+
+    .#{$size}-#{$i} {
+      width: percentage($i / $grid-total-columns);
+    }
+
+    @if $i < $grid-total-columns {
+      @if $grid-include-offset-classes == true {
+        $column: ($i - 1);
+        .#{$size}-offset-#{$column} {
+          margin-left: percentage($column / $grid-total-columns);
+        }
+      }
+
+      @if $grid-include-push-classes == true {
+        .#{$size}-push-#{$i} {
+          left: percentage($i / $grid-total-columns);
+          right: auto;
+        }
+      }
+
+      @if $grid-include-pull-classes == true {
+        .#{$size}-pull-#{$i} {
+          left: auto;
+          right: percentage($i / $grid-total-columns);
+        }
+      }
+    }
+  }
+
+  @if $grid-include-center-classes == true {
+    .#{$size}-centered {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .#{$size}-uncentered {
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+/*===============================================
+Main header - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../mixins/helpers";
+@import "../logo";
+
+.header-main {
+  @include clearfix;
+
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid $coop-border-grey;
+  text-align: center;
+
+  @include media(medium) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0;
+  }
+
+  .coop-logo {
+    float: left;
+    height: 36px;
+    padding: 5px;
+    margin: 0 13px 0 -5px;
+
+    @include media(medium) {
+      width: 68px;
+      height: 72px;
+      margin-right: 7px;
+      padding: 10px;
+
+      img {
+        width: 68px;
+        height: 72px;
+      }
+    }
+  }
+
+  .identifier {
+    float: left;
+    margin-top: 9px;
+    padding: 5px 0;
+    border-bottom: 0;
+    color: $body-copy;
+    font-size: em-calc(18);
+    line-height: 1;
+
+    &:hover,
+    &:active {
+      color: $coop-grey;
+      border-bottom: 0;
+    }
+
+    &:focus {
+      color: $coop-grey;
+    }
+
+    @include media(medium) {
+      padding: 10px 0;
+      margin-top: 22px;
+      font-size: em-calc(28);
+    }
+  }
+}
+
+.mobile-menu-toggle {
+  float: right;
+  padding: 5px;
+  margin-right: -5px;
+  border-bottom: 0;
+  color: $coop-blue;
+  line-height: 1;
+
+  @include media(medium) {
+    display: none;
+  }
+
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    color: $coop-blue;
+    border-bottom: 0;
+  }
+
+  .icon-menu {
+    &:before {
+      content: '\e61a';
+    }
+  }
+
+  &.open {
+    .icon-menu {
+      &:before {
+        content: '\e61b';
+      }
+    }
+  }
+
+  .mobile-menu-text {
+    display: block;
+    font-family: $bold;
+    font-size: em-calc(10);
+    line-height: 1;
+  }
+}

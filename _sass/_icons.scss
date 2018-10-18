@@ -1,0 +1,159 @@
+/*===============================================
+Icons - Co-op Front-end Toolkit
+===============================================*/
+
+@import "functions";
+@import "mixins/icons";
+
+.icon {
+  font-size: 1.5em;
+}
+
+.icon:before,
+[data-icon]:before {
+  @extend %icon;
+}
+
+[data-icon]:before {
+  content: attr(data-icon);
+}
+
+// Modifiers
+.icon-size-16:before {
+  @extend %icon-size-16;
+}
+
+.icon-size-24:before {
+  @extend %icon-size-24;
+}
+
+.icon-size-32:before {
+  @extend %icon-size-32;
+}
+
+.icon-size-64:before {
+  @extend %icon-size-64;
+}
+
+// Icon links
+.link-icon-right {
+
+  margin-right: 1.5em;
+
+  .icon {
+    display: inline-block;
+    width: 1em;
+    margin-right: - 1.25em;
+    font-size: 1em;
+  }
+}
+
+.link-icon-left {
+
+  margin-left: 1.25em;
+
+  .icon {
+    display: inline-block;
+    width: 1em;
+    margin-left: - 1.25em;
+    font-size: 1em;
+  }
+}
+
+
+// Icons
+.icon-information:before { @extend %icon-information; }
+.icon-search:before { @extend %icon-search; }
+.icon-location:before { @extend %icon-location; }
+// This icon code needs to go back to its original.
+.icon-location-alt:before { @extend %icon-location-alt; }
+// This icon code needs to go back to its original.
+.icon-filter:before { @extend %icon-filter; }
+.icon-alert:before { @extend %icon-alert; }
+.icon-error:before { @extend %icon-error; }
+.icon-help:before { @extend %icon-help; }
+.icon-forward-arrow:before { @extend %icon-forward-arrow; }
+.icon-back-arrow:before { @extend %icon-back-arrow; }
+.icon-up-arrow:before { @extend %icon-up-arrow; }
+.icon-down-arrow:before { @extend %icon-down-arrow; }
+.icon-tick:before { @extend %icon-tick; }
+.icon-download:before { @extend %icon-download; }
+.icon-print:before { @extend %icon-print; }
+.icon-phone:before { @extend %icon-phone; }
+.icon-normal-basket:before { @extend %icon-normal-basket; }
+.icon-empty-basket:before { @extend %icon-empty-basket; }
+.icon-padlock:before { @extend %icon-padlock; }
+.icon-email:before { @extend %icon-email; }
+.icon-delivery:before { @extend %icon-delivery; }
+.icon-time:before { @extend %icon-time; }
+.icon-award:before { @extend %icon-award; }
+.icon-award-alt:before { @extend %icon-award-alt; }
+.icon-write-to-us:before { @extend %icon-write-to-us; }
+.icon-news:before { @extend %icon-news; }
+.icon-menu:before { @extend %icon-menu; }
+.icon-close:before { @extend %icon-close; }
+.icon-edit:before { @extend %icon-edit; }
+.icon-membership-card:before { @extend %icon-membership-card; }
+.icon-view:before { @extend %icon-view; }
+.icon-home:before { @extend %icon-home; }
+.icon-folder:before { @extend %icon-folder; }
+.icon-user:before { @extend %icon-user; }
+.icon-logout:before { @extend %icon-logout; }
+.icon-twitter:before { @extend %icon-twitter; }
+.icon-facebook:before { @extend %icon-facebook; }
+.icon-instagram:before { @extend %icon-instagram; }
+.icon-youtube:before { @extend %icon-youtube; }
+.icon-pinterest:before { @extend %icon-pinterest; }
+.icon-linkedin:before { @extend %icon-linkedin; }
+.icon-forward-arrow-button:before { @extend %icon-forward-arrow-button; }
+.icon-back-arrow-button:before { @extend %icon-back-arrow-button; }
+.icon-up-arrow-button:before { @extend %icon-up-arrow-button; }
+.icon-down-arrow-button:before { @extend %icon-down-arrow-button; }
+.icon-open-new-tab:before { @extend %icon-open-new-tab; }
+.icon-tick-alt:before { @extend %icon-tick-alt; }
+.icon-squircle-active:before { @extend %icon-squircle-active; }
+.icon-empty-squircle:before { @extend %icon-empty-squircle; }
+.icon-grid:before { @extend %icon-grid; }
+.icon-article:before { @extend %icon-article; }
+.icon-avatar-alt:before { @extend %icon-avatar-alt; }
+.icon-avatar:before { @extend %icon-avatar; }
+.icon-bespoke:before { @extend %icon-bespoke; }
+.icon-comment-small:before { @extend %icon-comment-small; }
+.icon-comment:before { @extend %icon-comment; }
+.icon-cross-alt:before { @extend %icon-cross-alt; }
+.icon-cross:before { @extend %icon-cross; }
+.icon-event:before { @extend %icon-event; }
+.icon-internet:before { @extend %icon-internet; }
+.icon-tick-alt:before { @extend %icon-tick-alt; }
+.icon-video:before { @extend %icon-video; }
+.icon-list:before { @extend %icon-list; }
+.icon-share:before { @extend %icon-share; }
+.icon-award-fill:before { @extend %icon-award-fill; }
+.icon-disabled-access:before { @extend %icon-disabled-access; }
+.icon-logo:before { @extend %icon-logo; }
+.icon-amazon:before { @extend %icon-amazon; }
+.icon-atm:before { @extend %icon-atm; }
+.icon-baby-changing-facilities:before { @extend %icon-baby-changing-facilities; }
+.icon-bakery:before { @extend %icon-bakery; }
+.icon-cafe:before { @extend %icon-cafe; }
+.icon-costa:before { @extend %icon-costa; }
+.icon-customer-toilets:before { @extend %icon-customer-toilets; }
+.icon-dunkin-donuts:before { @extend %icon-dunkin-donuts; }
+.icon-hermes:before { @extend %icon-hermes; }
+.icon-my-location:before { @extend %icon-my-location; }
+.icon-national-lottery:before { @extend %icon-national-lottery; }
+.icon-parking:before { @extend %icon-parking; }
+.icon-paypoint:before { @extend %icon-paypoint; }
+.icon-petrol-station:before { @extend %icon-petrol-station; }
+.icon-photobooth:before { @extend %icon-photobooth; }
+.icon-post-office:before { @extend %icon-post-office; }
+
+
+// COLOURS
+// Some icons might have a special colour, for example, the Facebook icon will be in Facebook Blue.
+// Remember to extend, we might not always want them this colour
+
+// .icon-facebook-blue:before { color: #31588f; }
+// .icon-twitter-blue:before { color: #35a9d0; }
+// .icon-instagram-blue:before { color: #4191dd; }
+// .icon-pinterest-red:before { color: #d20000; }

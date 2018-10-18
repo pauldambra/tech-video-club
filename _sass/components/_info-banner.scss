@@ -1,0 +1,18 @@
+@import "../variables";
+@import "../mixins/helpers";
+
+.info-banner {
+  background: $offwhite;
+  padding: $quarter-spacing-unit 0;
+
+  p {
+    margin-bottom: 0;
+    line-height: 1.25;
+
+    @include media(medium) {
+      display: inline-block;
+    }
+
+  }
+
+}

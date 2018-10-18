@@ -1,0 +1,42 @@
+/*===============================================
+Messages/alerts mixins - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../functions";
+@import "../mixins/icons";
+@import "../mixins/typography";
+
+%message {
+  @include spacing('margin', 'bottom', 'half');
+  position: relative;
+  padding: $quarter-spacing-unit $quarter-spacing-unit $quarter-spacing-unit $base-spacing-unit;
+  border: 2px solid $info-orange;
+  background: $page;
+  color: $text;
+  font-size: em-calc(16px);
+
+  p,
+  ul,
+  ol {
+    margin-bottom: $quarter-spacing-unit;
+  }
+
+  ul,
+  ol {
+    padding-left: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  &:before {
+    @extend %icon;
+    @extend %icon-information;
+    position: absolute;
+    left: .6em;
+    top: .75em;
+    font-size: 1.6em !important;
+    color: $info-orange;
+  }
+}

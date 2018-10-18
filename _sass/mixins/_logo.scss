@@ -1,0 +1,41 @@
+/*===============================================
+Logo mixins - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../functions";
+@import "helpers";
+
+@mixin coop-logo {
+  box-sizing: content-box;
+  display: block;
+  border: none;
+
+  &:hover,
+  &:focus {
+    border: none;
+  }
+
+  svg {
+    display: block;
+    margin-bottom: -5.575%;
+    fill: $coop-blue;
+  }
+
+  img {
+    display: block;
+    margin-bottom: -5.575%;
+  }
+
+  .coop-logo-fallback {
+    display: none;
+  }
+
+  @include ie() {
+    .coop-logo-fallback {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: asset-url("images/logos/coop.png") center center no-repeat;
+    }
+  }
+}

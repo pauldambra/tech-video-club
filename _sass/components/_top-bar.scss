@@ -1,0 +1,27 @@
+/*===============================================
+Top bar - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../variables";
+@import "../functions";
+@import "../mixins/helpers";
+
+.top-bar {
+  background: $coop-blue;
+  padding: $quarter-spacing-unit /3 0;
+  color: $white;
+  font-size: em-calc(13);
+
+  a {
+    color: $white;
+    border-bottom-color: $white;
+
+    &:first-child {
+      margin-left: 0;
+
+      @include media(medium) {
+        margin-left: $quarter-spacing-unit;
+      }
+    }
+  }
+}

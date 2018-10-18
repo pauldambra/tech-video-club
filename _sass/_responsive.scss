@@ -1,0 +1,22 @@
+/*===============================================
+Responsive classes - Co-op Front-end Toolkit
+===============================================*/
+
+@import "variables";
+@import "mixins/helpers";
+@import "mixins/responsive";
+
+@each $size in $grid-screen-sizes {
+  // Standard columns
+  @if index($grid-screen-sizes, $size) {
+
+    @if $size == first($grid-screen-sizes) {
+      @include respond-classes();
+    }
+    @else {
+      @include media($size) {
+        @include respond-classes($size);
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+/*===============================================
+Functions - Co-op Front-end Toolkit
+===============================================*/
+
+@import "variables";
+
+/**
+ * Returns a full-formed url based on the $base-url setting.
+ * @param  {string} $url the relative URL for the resource
+ * @return {string}      the fully-formed url() value
+ */
+@function asset-url($url) {
+  @return url($base-asset-url + $url);
+}
+
+
+/**
+ * Strip unit from given value
+ * @param  {Number} $value Value to remove unit from
+ * @return {Number}        Raw value without unit
+ */
+@function strip-unit($value) {
+  @if type-of($value) == 'number' and not unitless($value) {
+    @return $value / ($value * 0 + 1);
+  }
+
+  @return $value;
+}
+
+
+/**
+ * Convert a pixel value to em
+ * @param  {Number} $value The pixel value to convert
+ * @return {Number}        The value converted to em
+ */
+@function em-calc($value) {
+  $base-font-size: map-deep-get($typographic-scale, "base", "body");
+  @return (strip-unit($value) / strip-unit($base-font-size)) * 1em;
+}
+
+@function emCalc($value) {
+  @warn "emCalc is deprecated. Please use em-calc() instead.";
+  @return em-calc($value);
+}
+
+
+/**
+ * Returns map-get($map, $key) or the default if the key doesn't exist
+ */
+@function map-get-default($map, $key, $default) {
+  @if map-has-key($map, $key) {
+    @return map-get($map, $key);
+  }
+  @else {
+    @return $default;
+  }
+}
+
+
+/**
+ * Returns a value from a deeply-nested map
+ */
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}

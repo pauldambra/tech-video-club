@@ -1,0 +1,87 @@
+/*===============================================
+Helpers - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../variables";
+@import "../mixins/helpers";
+
+// Padding
+.padding-x { padding: 0 !important; }
+.padding-e { padding: $quarter-spacing-unit / 2; }
+.padding-q { padding: $quarter-spacing-unit; }
+.padding-h { padding: $half-spacing-unit; }
+.padding-b { padding: $base-spacing-unit; }
+
+// Padding-bottom
+.padding-bx { padding-bottom: 0 !important; }
+.padding-be { padding-bottom: $quarter-spacing-unit / 2; }
+.padding-bq { padding-bottom: $quarter-spacing-unit; }
+.padding-bh { padding-bottom: $half-spacing-unit; }
+.padding-bb { padding-bottom: $base-spacing-unit; }
+
+// Padding-top
+.padding-tx { padding-top: 0 !important; }
+.padding-te { padding-top: $quarter-spacing-unit / 2; }
+.padding-tq { padding-top: $quarter-spacing-unit; }
+.padding-th { padding-top: $half-spacing-unit; }
+.padding-tb { padding-top: $base-spacing-unit; }
+
+// Margin
+.margin-x { margin: 0 !important; }
+.margin-e { margin: $quarter-spacing-unit / 2; }
+.margin-q { margin: $quarter-spacing-unit; }
+.margin-h { margin: $half-spacing-unit; }
+.margin-b { margin: $base-spacing-unit; }
+
+// Margin-bottom
+.margin-bx { margin-bottom: 0 !important; }
+.margin-be { margin-bottom: $quarter-spacing-unit / 2; }
+.margin-bq { margin-bottom: $quarter-spacing-unit; }
+.margin-bh { margin-bottom: $half-spacing-unit; }
+.margin-bb { margin-bottom: $base-spacing-unit; }
+
+// Margin-top
+.margin-tx { margin-top: 0 !important; }
+.margin-te { margin-top: $quarter-spacing-unit / 2; }
+.margin-tq { margin-top: $quarter-spacing-unit; }
+.margin-th { margin-top: $half-spacing-unit; }
+.margin-tb { margin-top: $base-spacing-unit; }
+
+// Borders
+.border { border: 1px solid $coop-border-grey; }
+.border-t { border-top: 1px solid $coop-border-grey; }
+.border-r { border-right: 1px solid $coop-border-grey; }
+.border-b { border-bottom: 1px solid $coop-border-grey; }
+.border-l { border-left: 1px solid $coop-border-grey; }
+
+.text-centre {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.visuallyhidden {
+  @include visuallyhidden;
+}
+
+.visuallyshown {
+  @include visuallyshown;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}

@@ -1,0 +1,74 @@
+/*===============================================
+Toggles - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../variables";
+@import "../mixins/icons";
+
+.toggle-trigger {
+  display: block;
+  padding: $quarter-spacing-unit;
+  margin-bottom: $quarter-spacing-unit;
+  border: 1px solid $coop-grey;
+  border-width: 1px 0;
+  color: $body-copy;
+  font-size: em-calc(20px);
+  transition: all .3s linear;
+
+  &:hover,
+  &:focus {
+    background: $offwhite;
+    color: $coop-blue;
+    border-bottom: 1px solid $coop-grey;
+  }
+
+  &.init {
+
+    &:after {
+      @extend %icon;
+      @extend %icon-down-arrow-button;
+      float: right;
+      transition: all .15s linear;
+      font-size: em-calc(24px);
+    }
+
+    &.open {
+      color: $coop-blue;
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.toggle-content {
+  padding-left: $quarter-spacing-unit;
+  padding-right: $quarter-spacing-unit;
+  transition: all .5s ease-in-out;
+  outline: 0;
+
+  &.init {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    &.open {
+      height: auto;
+      opacity: 1;
+    }
+  }
+}
+
+.accordion {
+  border-bottom: 1px solid $coop-grey;
+
+  .toggle-trigger {
+    margin-bottom: 0;
+    border-bottom-width: 0;
+
+    &.open {
+      margin-bottom: $quarter-spacing-unit;
+      border-bottom-width: 1px;
+    }
+  }
+}

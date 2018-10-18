@@ -1,0 +1,31 @@
+/*===============================================
+Grid layout - Co-op Front-end Toolkit
+===============================================*/
+
+@import "variables";
+@import "mixins/helpers";
+@import "mixins/grid";
+
+.wrap {
+  @extend %wrap;
+}
+
+.row {
+  @include row($collapse-class: 'collapse');
+}
+
+.column,
+.columns {
+  @include column($collapse-class: 'collapse');
+}
+
+// Standard columns
+@include grid-columns('all');
+
+@each $size in $grid-screen-sizes {
+  @if index($grid-screen-sizes, $size) {
+    @include media($size) {
+      @include grid-columns($size);
+    }
+  }
+}

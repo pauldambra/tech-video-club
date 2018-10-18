@@ -1,0 +1,48 @@
+// This file imports all the available styles form the Toolkit.
+
+// Variables:
+// These are required by most of the following styles and should always be
+// included in your project -- they do not produce any CSS by themselves, so
+// there is no overhead when including them.
+// The variables can be overridden by providing alternative defaults: refer to
+// _variables.scss for more information.
+
+@import "variables";
+
+// Reset
+@import "normalize";
+
+// Core styles
+@import "fonts";
+@import "typography";
+@import "global";
+@import "logo";
+@import "grid";
+@import "links";
+@import "lists";
+@import "icons";
+@import "tables";
+@import "buttons";
+@import "forms";
+@import "responsive";
+
+// Components
+@import "components/top-bar";
+@import "components/info-banner";
+@import "components/header";
+@import "components/header-main";
+@import "components/navigation-main";
+@import "components/navigation-inpage";
+@import "components/footer-main";
+@import "components/skip-nav";
+@import "components/cards";  
+@import "components/messages";
+@import "components/pagination";
+@import "components/breadcrumbs";
+@import "components/search";
+@import "components/tabs";
+@import "components/toggles";
+
+// Helpers / style trumps
+@import "helpers/layout";
+@import "helpers/colour";

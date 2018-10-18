@@ -1,0 +1,94 @@
+/*===============================================
+Tiles - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../variables";
+@import "../mixins/typography";
+
+%panel,
+%tile,
+.panel,
+.tile {
+  @include spacing('padding', 'all', 'half');
+  @include spacing('margin', 'bottom', 'half');
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+%boxed,
+.boxed,
+%tile--key,
+.tile--key {
+  @extend %panel;
+
+  border: 1px solid $coop-border-grey;
+}
+
+%panel-grey,
+.panel-grey,
+%tile--grey,
+.tile--grey {
+  @extend %panel;
+
+  background: $offwhite;
+}
+
+%tile--rounded,
+.tile--rounded {
+  border-radius: $border-radius;
+}
+
+%tile--shadow,
+.tile--shadow {
+  box-shadow: 0 2px 3px 0 $offwhite-highlighted;
+}
+
+%tile--signpost,
+.tile--signpost {
+  border-bottom: 2px solid #EAEAEA;
+}
+
+%tile--link,
+.tile--link {
+  display: block;
+  color: $body-copy;
+
+  &:hover {
+    color: $body-copy;
+    border-bottom: 2px solid #EAEAEA;
+  }
+
+  h2,
+  h3 {
+    display: inline-block;
+    font-family: $regular;
+    line-height: 1.1;
+    color: $coop-link-blue;
+    border-bottom: .05em solid $coop-link-blue;
+    @include spacing('margin', 'bottom', 'quarter');
+  }
+
+  &:hover {
+    h2,
+    h3 {
+      color: darken($coop-link-blue, 15%);
+      border-color: darken($coop-link-blue, 15%);
+    }
+
+  }
+
+  p {
+    @include spacing('margin', 'bottom', 'half');
+  }
+
+  &:hover,
+  &:active {
+    color: $body-copy;
+  }
+}

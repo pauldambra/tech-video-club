@@ -1,0 +1,115 @@
+/*===============================================
+Tabs - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../variables";
+@import "../functions";
+@import "../mixins/helpers";
+
+%tabs,
+.tabs {
+  @include clearfix;
+  margin: 0;
+
+  .tabs-nav {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      float: left;
+
+      a {
+        position: relative;
+        z-index: 9;
+        display: block;
+        margin: 0 $quarter-spacing-unit /4 -1px;
+        padding: 1em 2em;
+        background: $offwhite;
+        border: 1px solid $coop-grey;
+        border-width: 1px 1px 0;
+        border-radius: $border-radius $border-radius 0 0;
+        font-size: em-calc(18);
+        color: $coop-grey;
+        text-align: center;
+
+        &:hover,
+        &:focus {
+          background: darken($offwhite, 5%);
+        }
+
+        &.active {
+          outline: none;
+          z-index: 11;
+          background: $white;
+          color: $coop-blue;
+        }
+      }
+    }
+  }
+
+  .tabs-content {
+    position: relative;
+    z-index: 10;
+    clear: left;
+    background: $white;
+    border: 1px solid $coop-grey;
+    margin: 0 $quarter-spacing-unit /4;
+  }
+
+  .tab-panel {
+    padding: $quarter-spacing-unit;
+  }
+
+  &.init {
+    .tab-panel {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+.tabs-spread {
+  .tabs-nav {
+    display: table;
+    width: 100%;
+
+    li {
+      float: none;
+      display: table-cell;
+    }
+  }
+}
+
+.tabs-vertical {
+  margin: 0;
+
+  .tabs-nav {
+    float: left;
+    width: 20%;
+    margin: 0 -1px 0 0;
+
+    li {
+      clear: left;
+      display: block;
+      width: 100%;
+
+      a {
+        margin: 0 0 $quarter-spacing-unit /2;
+        border-width: 1px 0 1px 1px;
+        border-radius: $border-radius 0 0 $border-radius;
+      }
+    }
+  }
+
+  .tabs-content {
+    float: left;
+    clear: none;
+    width: 80%;
+    margin: 0;
+  }
+}

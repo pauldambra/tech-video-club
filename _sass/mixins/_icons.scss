@@ -1,0 +1,147 @@
+/*===============================================
+Icons mixins - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../functions";
+
+@font-face {
+  font-family: 'coopicons';
+  src: asset-url('fonts/coopicons.eot?-1cb1l5');
+  src: asset-url('fonts/coopicons.eot?#iefix-1cb1l5') format('embedded-opentype'),
+       asset-url('fonts/coopicons.ttf?-1cb1l5') format('truetype'),
+       asset-url('fonts/coopicons.woff?-1cb1l5') format('woff'),
+       asset-url('fonts/coopicons.woff?-1cb1l5') format('woff2'),
+       asset-url('fonts/coopicons.svg?-1cb1l5#coopicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+%icon {
+  font-family: 'coopicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+}
+
+%icon-size-16 {
+  font-size: 16px;
+}
+
+%icon-size-24 {
+  font-size: 24px;
+}
+
+%icon-size-32 {
+  font-size: 32px;
+}
+
+%icon-size-64 {
+  font-size: 64px;
+}
+
+
+// Icons
+%icon-information { content: '\e600'; }
+%icon-search { content: '\e601'; }
+%icon-location { content: '\e602'; }
+
+// This icon code needs to go back to its original.
+%icon-location-alt { content: '\e90a'; }
+
+// This icon code needs to go back to its original.
+%icon-filter { content: '\e604'; }
+%icon-alert { content: '\e605'; }
+%icon-error { content: '\e606'; }
+%icon-help { content: '\e607'; }
+%icon-forward-arrow { content: '\e608'; }
+%icon-back-arrow { content: '\e609'; }
+%icon-up-arrow { content: '\e60a'; }
+%icon-down-arrow { content: '\e60b'; }
+%icon-tick { content: '\e60c'; }
+%icon-download { content: '\e60d'; }
+%icon-print { content: '\e60e'; }
+%icon-phone { content: '\e60f'; }
+%icon-normal-basket { content: '\e610'; }
+%icon-empty-basket { content: '\e611'; }
+%icon-padlock { content: '\e612'; }
+%icon-email { content: '\e613'; }
+%icon-delivery { content: '\e614'; }
+%icon-time { content: '\e615'; }
+%icon-award { content: '\e616'; }
+%icon-award-alt { content: '\e617'; }
+%icon-write-to-us { content: '\e618'; }
+%icon-news { content: '\e619'; }
+%icon-menu { content: '\e61a'; }
+%icon-close { content: '\e61b'; }
+%icon-edit { content: '\e61c'; }
+%icon-membership-card { content: '\e61d'; }
+%icon-view { content: '\e61e'; }
+%icon-home { content: '\e61f'; }
+%icon-folder { content: '\e620'; }
+%icon-user { content: '\e621'; }
+%icon-logout { content: '\e624'; }
+%icon-twitter { content: '\e625'; }
+%icon-facebook { content: '\e626'; }
+%icon-instagram { content: '\e627'; }
+%icon-youtube { content: '\e622'; }
+%icon-pinterest { content: '\e62b'; }
+%icon-linkedin { content: '\e62c'; }
+%icon-forward-arrow-button { content: '\e62d'; }
+%icon-back-arrow-button { content: '\e62e'; }
+%icon-up-arrow-button { content: '\e62f'; }
+%icon-down-arrow-button { content: '\e630'; }
+%icon-open-new-tab { content: '\e631'; }
+%icon-tick-alt { content: '\e623'; }
+%icon-squircle-active { content: '\e62a'; }
+%icon-empty-squircle { content: '\e628'; }
+%icon-grid { content: '\e629'; }
+%icon-article { content: '\e900'; }
+%icon-avatar-alt { content: '\e901'; }
+%icon-avatar { content: '\e902'; }
+%icon-bespoke { content: '\e90d'; }
+%icon-comment-small { content: '\e904'; }
+%icon-comment { content: '\e905'; }
+%icon-cross-alt { content: '\e906'; }
+%icon-cross { content: '\e907'; }
+%icon-event { content: '\e908'; }
+%icon-internet { content: '\e909'; }
+%icon-tick-alt { content: '\e90b'; }
+%icon-video { content: '\e90c'; }
+%icon-list { content: '\e910'; }
+%icon-share { content: '\e90e'; }
+%icon-award-fill { content: '\e903'; }
+%icon-disabled-access { content: "\e90f"; }
+%icon-logo { content: "\e911"; }
+%icon-amazon { content: "\e912"; }
+%icon-atm { content: "\e913"; }
+%icon-baby-changing-facilities { content: "\e914"; }
+%icon-bakery { content: "\e915"; }
+%icon-cafe { content: "\e916"; }
+%icon-costa { content: "\e917"; }
+%icon-customer-toilets { content: "\e918"; }
+%icon-dunkin-donuts { content: "\e919"; }
+%icon-hermes { content: "\e91a"; }
+%icon-my-location { content: "\e91b"; }
+%icon-national-lottery { content: "\e91c"; }
+%icon-parking { content: "\e91d"; }
+%icon-paypoint { content: "\e91e"; }
+%icon-petrol-station { content: "\e91f"; }
+%icon-photobooth { content: "\e920"; }
+%icon-post-office { content: "\e921"; }
+
+
+
+// COLOURS
+// Some icons might have a special colour, for example, the Facebook icon will be in Facebook Blue.
+// Remember to extend, we might not always want them this colour
+
+// %icon-facebook-blue { color: #31588f; }
+// %icon-twitter-blue { color: #35a9d0; }
+// %icon-instagram-blue { color: #4191dd; }
+// %icon-pinterest-red { color: #d20000; }

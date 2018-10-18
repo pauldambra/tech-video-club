@@ -1,0 +1,192 @@
+/*===============================================
+Buttons mixins - Co-op Front-end Toolkit
+===============================================*/
+
+@import "../functions";
+@import "../mixins/icons";
+
+%button-base {
+  @include body;
+  display: inline-block;
+  padding: $quarter-spacing-unit $half-spacing-unit * 1.25;
+  color: $coop-link-blue;
+  font-family: $medium;
+  text-align: center;
+  border: 0;  
+  border-radius: $border-radius;
+  transition: all 0.15s linear;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border: 0;
+  }
+
+  &:focus {
+    outline: 4px solid $coop-blue;
+  }
+
+  &:active {
+    outline: 0;
+  }
+
+  &:disabled,
+  &.disabled {
+    opacity: .75;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+}
+
+@mixin button-colour($text-colour: $coop-link-blue,
+                     $hover-text-colour: $coop-blue-highlighted,
+                     $active-text-colour: $coop-blue-highlighted,
+                     $bg-colour: $white,
+                     $hover-bg-colour: $grey-light,
+                     $active-bg-colour: $grey-light) {
+
+  color: $text-colour;
+  background-color: $bg-colour;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-bg-colour;
+    color: $hover-text-colour;
+  }
+
+  &:active {
+    background-color: $active-bg-colour;
+    color: $active-text-colour;
+  }
+
+  &:disabled,
+  &.disabled {
+
+    &:hover,
+    &:focus {
+      background-color: $bg-colour;
+    }
+  }
+
+  &.btn-loading:after {
+    border-color: $text-colour;
+  }
+}
+
+%btn-full {
+  width: 100%;
+}
+
+%btn-small {
+  padding: $quarter-spacing-unit / 3 $quarter-spacing-unit;
+  font-size: .875em;
+}
+
+%btn-medium {
+  padding: $quarter-spacing-unit / 2 $quarter-spacing-unit;
+}
+
+%btn-large {
+  padding: $quarter-spacing-unit $half-spacing-unit;
+}
+
+%btn-pill {
+  margin: .25em .25em .25em 0;
+  box-shadow: none !important;
+  border: 1px solid $coop-border-grey;
+
+  &:hover {
+    border: 1px solid $coop-border-grey;
+  }
+
+  &.btn-primary {
+    border: 1px solid $button-green;
+  }
+
+  &.btn-primary-dark {
+    border: 1px solid $button-grey;
+  }
+
+  &.btn-secondary {
+    border: 1px solid $coop-border-grey;
+
+    &:hover {
+      border: 1px solid $coop-border-grey;
+    }
+
+  }
+
+}
+
+%btn-loading {
+  &:after {
+    content: "";
+    animation: three-quarters-loader 1250ms infinite linear;
+    border: 2px solid;
+    border-right-color: transparent !important;
+    border-radius: 50%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    transition: color 0s;
+
+    @include ie(9) {
+      content: "...";
+      border-width: 0;
+      width: auto;
+      height: auto;
+      margin: 0;
+    }
+  }
+}
+
+%btn-back {
+  &:before {
+    @extend %icon;
+    @extend %icon-back-arrow;
+    position: relative;
+    left: 0;
+    margin-right: .25em;
+    font-size: 1.25em;
+    transition: all 0.15s linear;
+  }
+
+  &:hover,
+  &:focus {
+    &:before {
+      left: -.25em;
+    }
+  }
+}
+
+%btn-proceed {
+  &:after {
+    @extend %icon;
+    @extend %icon-forward-arrow;
+    position: relative;
+    left: 0;
+    margin-left: .25em;
+    font-size: 1.25em;
+    transition: all 0.15s linear;
+  }
+
+  &:hover,
+  &:focus {
+    &:after {
+      left: .25em;
+    }
+  }
+}
+
+@keyframes three-quarters-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

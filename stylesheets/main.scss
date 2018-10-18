@@ -1,7 +1,15 @@
 ---
 ---
+@import './coop-toolkit.scss';
 
-header {
+.video-image {
+  a {
+    text-decoration: none;
+    border-bottom: none;
+  }
+}
+
+/*header {
   display: flex;
   align-items: center;
   a {
@@ -59,3 +67,4 @@ body {
     }
   }
 }
+*/
