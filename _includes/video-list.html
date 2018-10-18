@@ -1,6 +1,6 @@
 {% for video in sorted_videos %}
 
-<div class="margin-bh row">
+<div class="margin-bh row video-tile">
   <div class="column">
 
     <h1>
@@ -16,7 +16,7 @@
     {% endif%}
 
     {% if video.image_url and video.image_url != blank %}
-      <div class="video-image row">
+      <div class="video-image row margin-tq">
         <div class="column all-7">
           <a href="{{ video.video_url }}">
             <img src="{{ video.image_url }}" />
