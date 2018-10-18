@@ -13,6 +13,7 @@ header {
   padding-top: 30px;
   padding-bottom: 27px;
   background: #1D2534;
+  position: relative;
   .site-name {
     font-size: 1.3125em;
     font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -21,6 +22,60 @@ header {
     vertical-align: top;
     border-bottom: 0;
   }
+}
+
+#primary_nav ul {
+    list-style: none;
+    background: #1D2534;
+    padding: 5px 0;
+}
+
+#primary_nav li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.8em;
+    height: 1.8em;
+    border-bottom: 1px solid #383838;
+    text-align: right;
+}
+
+#primary_nav li:last-child a {
+    border-bottom: none;
+}
+
+#primary_nav li a:hover,
+#primary_nav li a:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
+@media only screen and (min-width: 768px) {
+
+    header {
+        position: relative;
+    }
+
+    #primary_nav {
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        background: none;
+    }
+
+    #primary_nav li {
+        display: inline;
+    }
+
+    #primary_nav li a {
+        float: left;
+        border: none;
+        padding: 0 10px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        border-bottom: 0;
+    }
 }
 
 .video-tile {
