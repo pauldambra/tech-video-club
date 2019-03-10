@@ -1,0 +1,24 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}</link>
+    <atom:link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
+
+    {% assign sorted_videos = site.data.video_club | sort:"date" | reverse %}
+    {% for video in sorted_videos %}
+      <item>
+        <title>{{ video.title | xml_escape }}</title>
+        <description>{{ video.presenter | xml_escape }}</description>
+        <pubDate>{{ video.date }}</pubDate>
+        <link>{{ video.video_url | xml_escape }}</link>
+        <guid isPermaLink="false">{{ video.presenter | xml_escape }}/{{video.date }}</guid>
+      </item>
+    {% endfor %}
+
+  </channel>
+</rss>
