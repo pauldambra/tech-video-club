@@ -6,7 +6,7 @@
 <meta name="twitter:card" content="summary_large_image"></meta>
 <meta name="twitter:site" content="@pauldambra" />
 <meta name="twitter:creator" content="@pauldambra" />
-<meta property="og:url" content="{{site.url}}{{site.baseurl}}/{{page.path}}" />
+<meta property="og:url" content="{{site.url}}{{site.baseurl}}{{page.url}}" />
 
 {% assign last_video = site.data.video_club | sort:"date" | reverse | first %}
 
@@ -16,3 +16,4 @@
       {{ site.title }}" />
 <meta property="og:description" content="{{site.description}}" />
 <meta property="og:image" content="{{site.url}}{{site.baseurl}}/images/vid-club.jpg" />
+<meta property="og:type" content="website" />
