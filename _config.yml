@@ -17,7 +17,7 @@ title: Tech Video Club
 description: >- # this means to ignore newlines until "baseurl:"
   A list of the videos we've watched at our tech video club
 baseurl: "/tech-video-club" # the subpath of your site, e.g. /blog
-url: "http://pauldambra.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://pauldambra.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pauldambra
 github_username:  pauldambra
 
