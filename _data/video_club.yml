@@ -425,3 +425,136 @@
   note:
   date: 2018-10-24
 
+- presenter: multiple hack manchester entries
+  title: Hack Manchester 2018
+  video_url: https://www.youtube.com/playlist?list=PLEbnt9vfzp9FwOUpeXU6Lbo4nZZfHMaYO
+  image_url: https://pbs.twimg.com/media/Dq1faFRXQAAh0xl.jpg
+  note:
+  date: 2018-10-31
+
+- presenter: Tara Ojo
+  title: "junior.next()"
+  video_url: https://www.youtube.com/watch?v=6sVRVCAcNh8
+  image_url: https://pbs.twimg.com/media/DrZkIx_X0AADJRu.jpg
+  note:
+  date: 2018-11-07
+
+- presenter: Beverley Newing
+  title: "how to run an awesome tech internship"
+  video_url: https://www.youtube.com/watch?v=CSGD1Qt0VZc
+  image_url: https://pbs.twimg.com/media/DrZoS2kWwAAxSut.jpg
+  note:
+  date: 2018-11-07
+
+- presenter: Sandi Metz
+  title: "All the Little Things"
+  video_url: https://www.youtube.com/watch?v=8bZh5LMaSmE
+  image_url: https://pbs.twimg.com/media/Dr-BSy3X4AAhOHq.jpg
+  note: I was working from home. Thanks to @linuxlucy for running the session
+  date: 2018-11-14
+
+- presenter: I don't know
+  title: "Daily Game Unboxing - Mage Knight: Ultimate Edition"
+  video_url: https://www.youtube.com/watch?v=E4GxI2eSoa0
+  image_url:
+  note: Organisation fail on my part. Dan Strong did turn up but chose a video nothing to do with tech (and fair enough too)
+  date: 2018-11-22
+
+- presenter: Caitie McCaffrey
+  title: "GOTO 2015 • Applying the Saga Pattern"
+  video_url: https://www.youtube.com/watch?v=xDuwrtwYHu8
+  image_url: https://pbs.twimg.com/media/DtFs_w7WsAEWbSG.jpg
+  note:
+  date: 2018-11-28
+
+- presenter: Gojko Adzic
+  title: "GOTO 2017 • Designing for the Serverless Age"
+  video_url: https://www.youtube.com/watch?v=w7X4gAQTk2E
+  image_url: https://pbs.twimg.com/media/DuN0LMiX4AIGgy-.jpg
+  note: Thanks to Caroline Hatwell stepping in and running this week
+  date: 2018-12-05
+
+- presenter: Simon Brown
+  title: "Modular Monoliths"
+  video_url: https://www.youtube.com/watch?v=5OjqD-ow8GE&feature=youtu.be
+  image_url: https://pbs.twimg.com/media/DuNziNFWkAAp368.jpg
+  note:
+  date: 2018-12-12
+
+- presenter: James Mickens
+  title: "why do keynote speakers keep suggesting that improving security is possible"
+  video_url: https://www.youtube.com/watch?v=ajGX7odA87k
+  image_url: https://pbs.twimg.com/media/Dux2GIzXgAETH1X.jpg
+  note:
+  date: 2018-12-19
+
+- presenter: Scott Wlaschin
+  title: "Domain modelling with the F# type system"
+  video_url: https://vimeo.com/97507575
+  image_url: https://pbs.twimg.com/media/Dv55WvTWsAE4lrW.jpg
+  note:
+  date: 2019-01-02
+
+- presenter: Sandi Metz
+  title: "Polly wants a message"
+  video_url: https://www.deconstructconf.com/2018/sandi-metz-polly-want-a-message
+  image_url: https://pbs.twimg.com/media/DxCCGEjWsAE6Y7l.jpg
+  note:
+  date: 2019-01-16
+
+- presenter: Paul Johnston
+  title: "Serverless Best Practices"
+  video_url: https://www.youtube.com/watch?v=3LQXKOnZBUQ
+  image_url: https://pbs.twimg.com/media/DxmFzU2XgAEIhjy.jpg
+  note:
+  date: 2019-01-23
+
+- presenter: Nickolas Means
+  title: "Who Destroyed Three Mile Island?"
+  video_url: https://www.youtube.com/watch?v=hMk6rF4Tzsg
+  image_url:
+  note: Thanks to @linuxlucy running the session this week
+  date: 2019-01-30
+
+- presenter: Liz Fong-Jones
+  title: "Improving Reliability w/ Error Budgets & SRE"
+  video_url: https://www.youtube.com/watch?v=9kphSZi69tg
+  image_url: https://pbs.twimg.com/media/DyuNANvXcAAIYfC.jpg
+  note:
+  date: 2019-02-06
+
+- presenter: Bernd Ruecker
+  title: "Complex Event Flows in Distributed Systems"
+  video_url: https://www.youtube.com/watch?v=EegrVoPTRbQ
+  image_url: https://pbs.twimg.com/media/DzSOzZWX0AAknj2.jpg
+  note:
+  date: 2019-02-13
+
+- presenter: James Shore
+  title: "your path through agile fluency"
+  video_url: https://vimeo.com/68327316
+  image_url: https://pbs.twimg.com/media/Dz2YcZ_XgAEHvyI.jpg
+  note:
+  date: 2019-02-20
+
+- presenter: Guy Podjarny
+  title: "Securing Serverless – by Breaking in"
+  video_url: https://www.infoq.com/presentations/serverless-security-2018
+  image_url: https://pbs.twimg.com/media/D0aThEOWsAAjkUb.jpg
+  note:
+  date: 2019-02-27
+
+- presenter: Pia Nilsson
+  title: "Knowing Me, Knowing You - Growing Teams to Continuously Deliver"
+  video_url: https://www.youtube.com/watch?v=S92vVAEofes&feature=youtu.be
+  image_url:
+  note:
+  date: 2019-03-06
+
+- presenter: Simon Peyton Jones
+  title: "Build Systems à la Carte"
+  video_url: https://www.youtube.com/watch?v=BQVT6wiwCxM
+  image_url:
+  note:
+  date: 2019-03-06
+
