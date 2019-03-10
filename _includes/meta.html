@@ -13,7 +13,7 @@
 {% if page.id == "home" %}
   <meta property="og:url" content="{{ last_video.video_url }}" />
   <meta property="og:title" content="{{ last_video.title}}" />
-  <meta property="og:description" content="{{last_video.presenter}}" />
+  <meta property="og:description" content="our last video was from {{last_video.presenter}}" />
   <meta property="og:image" content="{{last_video.image_url | default: {{site.url}}{{site.baseurl}}/images/vid-club.jpg }}" />
   <meta property="og:type" content="video" />
 {% else %}
