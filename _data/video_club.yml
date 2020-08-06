@@ -691,3 +691,108 @@
   image_url:
   note:
   date: 2019-12-04
+
+- presenter: Paul Johnston
+  title: "Serverless Best Practice"
+  video_url: https://www.youtube.com/watch?v=3LQXKOnZBUQ
+  image_url:
+  note:
+  date: 2020-01-08
+
+- presenter: Dave Farley
+  title: "Reactive Systems"
+  video_url: https://www.youtube.com/watch?v=tKRa0O7aepo&feature=youtu.be&list=PLEx5khR4g7PLHBVGOjNbevChU9DOL3Axj
+  image_url:
+  note:
+  date: 2020-02-05
+
+- presenter: DMitry Solnikov
+  title: "Are you using JWT properly"
+  video_url: https://www.youtube.com/watch?v=M3jA0bGDCso&index=15&t=0s
+  image_url:
+  note:
+  date: 2020-02-26
+
+- presenter: Dan North
+  title: "Beyond Features"
+  video_url: https://www.youtube.com/watch?v=lz5HBtDl-1A
+  image_url:
+  note:
+  date: 2020-03-04
+
+- presenter: April Wensel
+  title: "Crafting Compassionate Code"
+  video_url: http://videos.ncrafts.io/video/338479797
+  image_url:
+  note:
+  date: 2020-03-25
+
+- presenter: Chris Munns
+  title: "Optimizing your serverless applications"
+  video_url: https://www.youtube.com/watch?v=5rMiq-jw1Ig&feature=emb_logo
+  image_url:
+  note:
+  date: 2020-04-01
+
+- presenter: Yan Cui
+  title: "How to build a social network entirely on serverless"
+  video_url: https://www.youtube.com/watch?v=o0SHFJDMpgc
+  image_url:
+  note:
+  date: 2020-04-08
+
+- presenter: Reni Eddo-Lodge
+  title: "Why I'm No Longer Talking to White People About Race"
+  video_url: https://www.youtube.com/watch?v=2vJZdeSqfFY
+  image_url:
+  note:
+  date: 2020-06-03
+
+- presenter: Nove Reid
+  title: "Not all superheros wear capes-how you have the power to change the world"
+  video_url: https://www.youtube.com/watch?v=G8iNGeVyvUs
+  image_url:
+  note:
+  date: 2020-06-03
+
+- presenter: Ayodele Odubela
+  title: "Combatting Bias in ML"
+  video_url: https://www.youtube.com/watch?v=NIxUAlmnqz0
+  image_url:
+  note:
+  date: 2020-06-25
+
+- presenter: Nikhil Garg
+  title: "Quora's Approach to Moving Fast Sustainably"
+  video_url: https://www.infoq.com/presentations/quora-processes-tools/
+  image_url:
+  note:
+  date: 2020-07-14
+
+- presenter: Peter Sommerlad
+  title: "Mocking Frameworks considered harmful"
+  video_url: https://www.youtube.com/watch?v=uhuHZXTRfH4&feature=youtu.be
+  image_url:
+  note:
+  date: 2020-07-14
+
+- presenter: Ashley McNamara
+  title: "The Thing About Burnout"
+  video_url: https://www.youtube.com/watch?v=-TVdRgT2j54
+  image_url:
+  note:
+  date: 2020-08-05
+
+- presenter: Dara Oke
+  title: "Going Global"
+  video_url: https://www.youtube.com/watch?v=18liNRp86Jc&feature=youtu.be
+  image_url:
+  note:
+  date: 2020-08-05
+
+- presenter: Russell Keith-Magee
+  title: "PyCon 2019 Keynote"
+  video_url: https://www.youtube.com/watch?v=ftP5BQh1-YM&feature=youtu.be&t=1243
+  image_url:
+  note:
+  date: 2020-08-05
