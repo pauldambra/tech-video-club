@@ -558,3 +558,136 @@
   note: Thanks to Livvy and James Jeffries for running the session
   date: 2019-03-06
 
+- presenter: James Nugent
+  title: "Infrastructure as TypeScript"
+  video_url: https://youtu.be/163q_yxX3sI
+  image_url:
+  note:
+  date: 2019-03-13
+
+- presenter: Hadi Hariri
+  title: "Creating DSL's in idiomatic Kotlin"
+  video_url: https://youtu.be/GjGQpSFieXA
+  image_url:
+  note:
+  date: 2019-03-27
+
+- presenter: Randy Shoup
+  title: "Scaling Your Architecture with Events and Services"
+  video_url: https://youtu.be/TuEQG5sUJKY
+  image_url:
+  note:
+  date: 2019-04-03
+
+- presenter: Dan North & Jessica Kerr
+  title: "Complexity is outside the code"
+  video_url: https://www.infoq.com/presentations/complexity-simplicity-esb
+  image_url:
+  note:
+  date: 2019-05-01
+
+- presenter: Ken Exner
+  title: "Transforming Software Development at Amazon"
+  video_url: https://www.youtube.com/watch?v=YCrhemssYuI
+  image_url:
+  note:
+  date: 2019-05-08
+
+- presenter: James Mickens
+  title: "Life As A Developer: My Code Does Not Work Because I Am A Victim Of Complex Societal Factors"
+  video_url: https://www.youtube.com/watch?v=7Nj9ZjwOdFQ
+  image_url:
+  note:
+  date: 2019-05-22
+
+- presenter: Dan North
+  title: "Governing Agile Delivery"
+  video_url: https://www.youtube.com/watch?v=wG-zBVl0A4g
+  image_url:
+  note:
+  date: 2019-05-29
+
+- presenter: Sandro Mancuso
+  title: "A case for outside in design"
+  video_url: https://www.youtube.com/watch?v=8a9k-aX345U
+  image_url:
+  note:
+  date: 2019-06-05
+
+- presenter: Mark Seeman
+  title: "One kata, three languages"
+  video_url: https://www.youtube.com/watch?v=Ux5wUSOsEfc&feature=youtu.be
+  image_url:
+  note:
+  date: 2019-06-12
+
+- presenter: Greg Young
+  title: "The Bizarre Mating Ritual of the Whipnose Seadevil"
+  video_url: https://www.youtube.com/watch?v=gpam7RGPFk8&feature=youtu.be&utm_content=bufferafa8a&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+  image_url:
+  note:
+  date: 2019-06-26
+
+- presenter: Abeba Birhane
+  title: "IN DEFENCE OF UNCERTAINTY"
+  video_url: http://videos.ncrafts.io/video/338449961
+  image_url:
+  note:
+  date: 2019-07-03
+
+- presenter: Anna Savarin
+  title: "Non-euclidean Software Delivery"
+  video_url: http://videos.ncrafts.io/video/338476554
+  image_url:
+  note:
+  date: 2019-07-10
+
+- presenter: Sal Freudenberg
+  title: "Lessons from the History of Socio-technical System"
+  video_url: https://www.infoq.com/presentations/socio-technical-systems-theory/
+  image_url:
+  note:
+  date: 2019-07-24
+
+- presenter: Liz Keogh
+  title: "Cynefin for XPers"
+  video_url: https://www.softwaretestpro.com/cynefin-for-xpers/
+  image_url:
+  note:
+  date: 2019-07-31
+
+- presenter: INDU ALAGARSAMY
+  title: "EVOLVING WITH THE CHANGING REQUIREMENTS - USING DDD AND SAGA MESSAGE PATTERN"
+  video_url: http://videos.ncrafts.io/video/338476789
+  image_url:
+  note:
+  date: 2019-08-07
+
+- presenter: Linda Lawton
+  title: "Adding business logic to your tokens. What could possibly go wrong"
+  video_url: https://www.youtube.com/watch?v=ai0MLsoN0Gk
+  image_url:
+  note:
+  date: 2019-08-14
+
+- presenter: Jessica Kerr
+  title: "Problem Solving"
+  video_url: https://youtu.be/LHOINssA76k
+  image_url:
+  note:
+  date: 2019-09-11
+
+- presenter: Pragmatic Dave Thomas
+  title: "Agile is Dead"
+  video_url: https://www.youtube.com/watch?v=a-BOSpxYJ9M&feature=emb_logo
+  image_url:
+  note:
+  date: 2019-11-27
+
+
+- presenter: Nicole Forsgren
+  title: "The Key to High Performance: What the Data Says"
+  video_url: https://www.youtube.com/watch?v=RBuPlMTXuFc
+  image_url:
+  note:
+  date: 2019-12-04
